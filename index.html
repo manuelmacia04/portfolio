@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Portfolio – Manuel Maciá Pérez</title>
 
-   <link rel="icon" href="favicon.ico" type="image/x-icon">
-   
 <style>
 /* =====================
    VARIABLES Y BASE
@@ -266,7 +264,7 @@ main{
     box-shadow:var(--card-shadow);
 }
 
-#skills h2{
+#skills h2, #ubicacion h2{
     margin-top:0;
     margin-bottom:32px;
 }
@@ -313,6 +311,38 @@ main{
 .skill-item p{
     margin:0;
     font-weight:600;
+}
+
+/* =====================
+   UBICACIÓN
+===================== */
+.ubicacion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.mapa-contenedor {
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.mapa-contenedor h3 {
+    color: #000;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.mapa-contenedor iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 8px;
 }
 
 /* =====================
@@ -377,6 +407,7 @@ footer{
         <a href="#projectos">Proyectos</a>
         <a href="#biografia">Biografía</a>
         <a href="#skills">Competencias</a>
+        <a href="#ubicacion">Ubicación</a>
         <a href="#contacto">Contacto</a>
     </nav>
 </header>
@@ -485,6 +516,27 @@ footer{
     </div>
 </section>
 
+<section class="seccion" id="ubicacion">
+    <div class="container">
+        <div class="skills-tarjeta">
+            <h2>Ubicación</h2>
+            <div class="ubicacion-grid">
+                
+                <div class="mapa-contenedor">
+                    <h3>Centro de estudios</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.1539266155577!2d-0.6865261234479564!3d38.275990283181815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63b40428666573%3A0xe546b5d207c91834!2sUniversidad%20Miguel%20Hern%C3%A1ndez%20de%20Elche!5e0!3m2!1ses!2ses!4v1715690000000!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <div class="mapa-contenedor">
+                    <h3>Lugar de trabajo: Radio UMH</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.2843477810756!2d-0.6841129234481005!3d38.27298518335767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63b418562d989f%3A0x629524024c30c926!2sRadio%20UMH!5e0!3m2!1ses!2ses!4v1715690000000!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="seccion" id="contacto">
     <div class="container">
         <div class="contacto-tarjeta">
@@ -511,6 +563,4 @@ footer{
 </footer>
 
 </body>
-
 </html>
-
